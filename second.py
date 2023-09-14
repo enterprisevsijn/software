@@ -24,7 +24,7 @@ while index < 9640:
 
     title = re.sub("\[.*?\] ", '', title)
     title = title.replace(' ', '-', 1).replace('/', '-')
-    title = 'temp/' + title + '.md'
+    title = title + '.md'
     f = open(title, mode='w', encoding='utf-8')
     f.write(paste())
     f.close()
